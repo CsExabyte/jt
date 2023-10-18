@@ -1,0 +1,16 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class classSelenium {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "E:\\ProjectForSelenium\\allrequirements\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://goatransport.gov.in/login");
+		
+		driver.findElement(By.id("ContentPlaceHolder1_inputName")).sendKeys("mrew");
+		driver.findElement(By.id("ContentPlaceHolder1_inputPassword")).sendKeys("1234as");
+		
+		
+	}
+}
